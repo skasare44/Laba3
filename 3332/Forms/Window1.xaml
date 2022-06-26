@@ -1,0 +1,39 @@
+﻿<Window x:Name="WorkWindow" x:Class="Laba3.Forms.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laba3.Forms"
+        mc:Ignorable="d"
+        Title="Работа" Height="319.5" Width="591.167" Loaded="WorkWindow_Loaded" ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <LinearGradientBrush.RelativeTransform>
+                    <TransformGroup>
+                        <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                        <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                        <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </LinearGradientBrush.RelativeTransform>
+                <GradientStop Color="#FFFBFBFB" Offset="1"/>
+                <GradientStop Color="#FF313AF3"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="214" Margin="50,32,0,0" VerticalAlignment="Top" Width="482" Background="White">
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="212" VerticalAlignment="Top" Width="481" Background="White">
+                <Button x:Name="button" Content="Устроиться" HorizontalAlignment="Left" Height="20" Margin="371,51,0,0" VerticalAlignment="Top" Width="71" Click="Button_Click" IsEnabled="False"/>
+            </Border>
+        </Border>
+        <Label Content="Должность" HorizontalAlignment="Left" Height="38" Margin="71,32,0,0" VerticalAlignment="Top" Width="156" Foreground="#FF002EFF" FontSize="22"/>
+        <Label Content="Домашний любимец: 300 рублей/месяц" HorizontalAlignment="Left" Margin="71,75,0,0" VerticalAlignment="Top" FontSize="18" Width="386"/>
+        <Label Content="Офисный планкот: 1000 рублей/месяц" HorizontalAlignment="Left" Margin="71,109,0,0" VerticalAlignment="Top" FontSize="18" Width="386"/>
+        <Label Content="Дегустатор корма: 7000 рублей/месяц" HorizontalAlignment="Left" Margin="71,143,0,0" VerticalAlignment="Top" FontSize="18" Width="386"/>
+        <Label Content="Модель выставок: 15000 рублей/месяц" HorizontalAlignment="Left" Margin="71,177,0,0" VerticalAlignment="Top" FontSize="18" Width="386"/>
+        <Button x:Name="button1" Content="Устроиться" HorizontalAlignment="Left" Height="20" Margin="424,118,0,0" VerticalAlignment="Top" Width="71" Click="Button_Click1" IsEnabled="False"/>
+        <Button x:Name="button2" Content="Устроиться" HorizontalAlignment="Left" Height="20" Margin="424,152,0,0" VerticalAlignment="Top" Width="71" Click="Button_Click2" IsEnabled="False"/>
+        <Button x:Name="button3" Content="Устроиться" HorizontalAlignment="Left" Height="20" Margin="424,186,0,0" VerticalAlignment="Top" Width="71" Click="Button_Click3" IsEnabled="False"/>
+
+    </Grid>
+</Window>

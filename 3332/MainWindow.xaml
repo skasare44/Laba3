@@ -1,0 +1,65 @@
+﻿<Window x:Class="Laba3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laba3"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="355" Width="800" Loaded="Window_Loaded" ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="gradient-grainy-gradient-texture_79603-1642.jpg"/>
+        </Grid.Background>
+        <Button Content="Выход" HorizontalAlignment="Left" Height="51" Margin="34,265,0,0" VerticalAlignment="Top" Width="166" Click="Button_Click_3"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="47" Margin="10,10,0,0" VerticalAlignment="Top" Width="228" Background="White"/>
+
+        <Label Content="Дата:" HorizontalAlignment="Left" Height="35" Margin="34,10,0,0" VerticalAlignment="Top" Width="57" FontSize="20"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="133" Margin="12,67,0,0" VerticalAlignment="Top" Width="226" Background="White">
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="78" Margin="137,35,0,0" VerticalAlignment="Top" Width="1"/>
+        </Border>
+        <Label Content="Деньги:" Margin="14,94,716,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="62"/>
+        <Label Content="Статус:" Margin="14,108,728,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="49"/>
+        <Label Content="Семейное положение:" Margin="15,122,642,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="137"/>
+        <Label Content="Настроение:" Margin="14,134,682,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="97"/>
+        <Label Content="Сытость:" Margin="15,146,683,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="97"/>
+        <Label Content="Дресировка:" Margin="15,159,682,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="97"/>
+        <Label x:Name="MoneyLabel" Content="100" Margin="151,96,518,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="125"/>
+        <Label x:Name="Status" Content="Бродячий" Margin="151,108,519,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="124"/>
+        <Label x:Name="Sp" Content="Холост" Margin="151,122,518,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="125"/>
+        <Label x:Name="MoodLabel" Content="50" Margin="152,134,518,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="124"/>
+        <Label x:Name="HungryLabel" Content="50" Margin="151,146,519,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="124"/>
+        <Label x:Name="Dres" Content="Дикий" Margin="151,159,520,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="123"/>
+        <Button Content="Работа" HorizontalAlignment="Left" Height="35" Margin="572,10,0,0" VerticalAlignment="Top" Width="194" Click="Button_Click"/>
+        <Label Content="Личный статус" Margin="12,67,0,0" Background="{x:Null}" Foreground="Blue" FontSize="14" HorizontalAlignment="Left" Width="140" Height="27" VerticalAlignment="Top"/>
+        <Label x:Name="DataLabel" Content="01.01.2000" HorizontalAlignment="Left" Height="35" Margin="91,10,0,0" VerticalAlignment="Top" Width="147" FontSize="20"/>
+        <Button Content="Питание" HorizontalAlignment="Left" Height="35" Margin="572,90,0,0" VerticalAlignment="Top" Width="194" Click="Button_Click1"/>
+        <Button Content="Развлечения" HorizontalAlignment="Left" Height="35" Margin="572,130,0,0" VerticalAlignment="Top" Width="194" Click="Button_Click2"/>
+        <Button x:Name="FindOwner" Content="Найти хозяина (1000 рублей)" HorizontalAlignment="Left" Height="35" Margin="572,170,0,0" VerticalAlignment="Top" Width="194" Click="Button_Click3"/>
+        <Button Content="Подработка" HorizontalAlignment="Left" Height="35" Margin="572,50,0,0" VerticalAlignment="Top" Width="194" Click="Button_Click4"/>
+        <Button x:Name="FindFemale" Content="Найти самку (7000 рублей)" HorizontalAlignment="Left" Height="35" Margin="572,210,0,0" VerticalAlignment="Top" Width="194" Click="Button_Click5"/>
+        <Button x:Name="Training" Content="Дрессироваться (30000 рублей)" HorizontalAlignment="Left" Height="35" Margin="572,250,0,0" VerticalAlignment="Top" Width="194" Click="Button_Click6"/>
+        <Image gif:ImageBehavior.AnimatedSource="kursed.gif" HorizontalAlignment="Left" Height="275" Margin="260,10,0,0" VerticalAlignment="Top" Width="307" Source="kursed.gif"/>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Height="50" Margin="34,210,0,0" VerticalAlignment="Top" Width="166" Click="Button_Click_1"/>
+        <Border x:Name="MainPanel" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="326" VerticalAlignment="Top" Width="794">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="91" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FFF3D200" Offset="0"/>
+                    <GradientStop Color="#FFE45353" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <Button x:Name="newGame" Content="Новая игра" HorizontalAlignment="Left" Margin="170,45,0,0" VerticalAlignment="Top" Width="450" Height="97" Click="Button_Click_2" FontSize="48"/>
+        <Button x:Name="LoadGame" Content="Загрузить" HorizontalAlignment="Left" Margin="170,152,0,0" VerticalAlignment="Top" Width="450" Height="97" Click="LoadGame_Click" FontSize="48"/>
+
+    </Grid>
+</Window>
